@@ -20,7 +20,21 @@ function AddReview({onHandleAddReview, id, reviews}){
         .then((data) => onHandleAddReview(data))
         // console.log(comment)
 
-    
+        
+        
+    }
+    return (
+        <div>
+            <form onSubmit={addReviewSubmit}>
+            <label  for="exampleFormControlTextarea1" class="form-label">Comment: </label>
+                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="5" onChange={(e)=> setComment(e.target.value)} required/>
+                <button type="submit">Add a Comment</button>
+                            
+                
+            </form>
+
+        </div>
+    )
        
 }
 
