@@ -1,8 +1,8 @@
 # Developer-Blog
  ## Judy Mwai
 ## Screenshot
- <!-- ![image](./blog-client/public/landing.png) -->
- <img src="/blog-client/public/landing.png" />
+ <!-- ![image](./blog-client-front/public/landing.png) -->
+ <img src="./blog-client-front/public/landing.png" />
  
  ## Table of Content
  - [Description](#description)
