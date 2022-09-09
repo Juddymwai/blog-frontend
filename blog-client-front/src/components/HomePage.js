@@ -51,9 +51,13 @@ function HomePage(){
 
                   <span>{post.reviews.map((review)=> {
                   
-                    return <p style={{color: 'blue'}}>{review.name} ~ 
-                     <span style={{textAlign:'left', color: 'white'}}> {review.comment}</span>  {new Date(review.created_at).toLocaleTimeString()} <DeletePost onDeletePost={handleDeletePost} id={review.id}/></p>
-                    
+                    return (
+                    <div>
+                        <p> <span style={{color: 'blue'}}>{review.name} </span> ~ </p> 
+                        <p >{review.comment} <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span></p>
+                        <p><DeletePost onDeletePost={handleDeletePost} id={review.id}/></p>
+                    </div>
+                    )
                   }
                   )}</span>
                   {/* <h4 class="btn btn-primary">Add Comment</h4> */}
