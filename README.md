@@ -15,7 +15,7 @@
  - [Licence](#licence)
  - [Authors Info](#Authors-Info)
  ## Description
- <p>This project is a single web page  application known as Developer-Blog that is developed using react for the frontend and ruby for the backend. React has enable the app to be simple and easy to implement. The app uses active record to interact with the databse. Additionally the app has API routes in sinatra that handles CRUD operations.The functionality of the app is to enable users to access various blogs posts from developers. It additionally allows users to add their own posts once they are logged in.</p>
+ <p>This project is a single web page  application known as Developer-Blog that is developed using react for the frontend. The functionality of the app is to enable users to access various blogs posts from developers. It additionally allows users to add their own posts once they are logged in.</p>
 
 ## Features
 As a user of the application,you will be able to :
@@ -29,18 +29,18 @@ As a user of the application,you will be able to :
  * Access to internet
  ### Installation Process
  ****
-* Clone to the repo : git clone https://github.com/Juddymwai/Blog-ruby
+* Clone to the repo : git clone https://github.com/Juddymwai/blog-frontend
 * Unzip the downloaded files in a folder of choice.
 * Open the index file from the zipped file with any browser.
  ****
  
 ### Live Link
-- Click this link to view the live application https://juddymwai.github.io/The-Blog-HUB/
+- Click this link to view the live application
 ### Technology  Used
 * HTML - has been used to display the app.
 * CSS - has been used to style the User Interface.
 * React- has been used to make single web page applications
-* Ruby- has been used to develop the backend of the app. For instances active record has been used to interact with thhe database
+* 
 
 
 ## Licence
