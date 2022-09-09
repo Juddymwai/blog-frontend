@@ -23,6 +23,11 @@ function HomePage(){
     }
 
 
+  function handleDeletePost(id){
+    const updatedPost = blogPost.filter((p) => p.id !== id);
+    setBlogPost(updatedPost)
+
+  }
 
  
   
