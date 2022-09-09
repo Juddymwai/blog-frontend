@@ -7,6 +7,7 @@ import DeletePost from "./DeletePost";
 function HomePage(){
     const [blogPost, setBlogPost]=useState([]);
     const [newReview,setNewReview]=useState([])
+    const [showReviews, setShowreviews] = useState(false)
     
 
     useEffect(()=>{
@@ -29,6 +30,10 @@ function HomePage(){
 
   }
 
+  function handleHideReviews(){
+    setShowreviews((showReviews) => !showReviews)
+  }
+
  
   
   
@@ -45,26 +50,33 @@ function HomePage(){
                 <div className="card-body" key={post.id}>
                   <h5 className="card-title"><span><h4 class="btn btn-primary">{post.Author}</h4> </span> |{post.Title} </h5>
                   <p className="card-text">{post.Content}</p>
-                  <div className="review">
-
-                  <h5 style={{color:"blue", textAlign:"left"}}>Reviews</h5>
-
-                  <span>{post.reviews.map((review)=> {
                   
-                    return (
-                    <div>
-                        <p> <span style={{color: 'blue'}}>{review.name} </span> ~ </p> 
-                        <p >{review.comment} <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span></p>
-                        <p><DeletePost onDeletePost={handleDeletePost} id={review.id}/></p>
-                    </div>
-                    )
-                  }
-                  )}</span>
-                  {/* <h4 class="btn btn-primary">Add Comment</h4> */}
-                  <AddReview onHandleAddReview={handleAddReview} id={post.id}/> 
+                  <div className="review">
+                    {showReviews ? (
+                      <div>
+                      <h5 style={{color:"blue", textAlign:"center"}}>Reviews</h5>
+                      <div className="reviews-card">
+                        {post.reviews.map((review)=> {
+                          return (
+                          <div className="reviews" style={{textAlign: "left"}}>
+                              <p> <span style={{color: 'blue'}}>{review.name} </span>  ~  
+                               {review.comment}  
+                                <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span> <DeletePost onDeletePost={handleDeletePost} id={review.id}/></p>
+  
+                          </div>
+                          )
+                        }
+                        )}
+                      </div>
+                        <AddReview onHandleAddReview={handleAddReview} id={post.id}/> 
+                        <DeletePost onDeletePost={handleDeletePost} id={post.id}/>
+
+                      </div>
+                      ) : (null)}
+                      <button onClick={handleHideReviews}>See Reviews</button>
+
                   </div>
 
-                  <DeletePost onDeletePost={handleDeletePost} id={post.id}/>
 
                   {/* <button class="btn btn-primary" onClick={handleDeletePost}>Delete</button> */}
 

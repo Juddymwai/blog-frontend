@@ -40,3 +40,17 @@ code {
   
   
 }
+
+.reviews {
+
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.reviews button {
+  border: none;
+}
+
+.reviews-card {
+  
+}

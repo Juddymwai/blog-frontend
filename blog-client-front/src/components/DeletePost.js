@@ -40,7 +40,7 @@ function DeletePost({onDeletePost, id, onUpdatedBody, currentUser}){
            {/* <p><span type="button" onClick={handleDeleteClick} style={{backgroundColor:"rgb(37, 35, 35)"}}> 
              */}
             <p> <span  type = "button" onClick={handleDeleteClick}role="img" aria-label="delete">
-            🗑</span> </p>
+             🗑</span> </p>
     
     
         </div>
