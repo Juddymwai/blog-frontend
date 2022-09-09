@@ -17,14 +17,12 @@ function HomePage(){
     }, [newReview])
 
 
-   
+    function handleAddReview(newReviews){
+      setNewReview([...newReview, newReviews])
+     
+    }
 
 
-  function handleDeletePost(id){
-    const updatedPost = blogPost.filter((p) => p.id !== id);
-    setBlogPost(updatedPost)
-
-  }
 
  
   
