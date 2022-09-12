@@ -25,12 +25,7 @@ function Navbar(){
                 <p style={{paddingTop: 10+"px"}}> - Follow the latest news and thoughts <br></br> from the developer's Blog</p>
             </div>
 
-            
-          
-
-
-            
-            
+        
 
         </div>
        
