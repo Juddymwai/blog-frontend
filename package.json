@@ -1,7 +1,7 @@
 {
   "name": "the-blog-hub",
   "version": "0.1.0",
-  "homepage": "https://Juddymwai.github.io",
+  "homepage": "https://Juddymwai.github.io/blog-frontend",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
