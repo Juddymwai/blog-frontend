@@ -12,7 +12,7 @@ function DeletePost({onDeletePost, id, onUpdatedBody, currentUser}){
 
 
     function handleDeleteClick(){
-        fetch (`http://localhost:9292/posts/${id}`, {
+        fetch (`https://new-blog22.herokuapp.com/posts/${id}`, {
             method: "DELETE",
             headers:{"Content-Type": "application/json"}
         

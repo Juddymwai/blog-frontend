@@ -29,7 +29,7 @@ function NewPostForm({onHandleAddPost, setIsFilledIn}){
             "Content":content,
             "Author": author
         }
-        fetch("http://localhost:9292/posts", {
+        fetch("https://new-blog22.herokuapp.com/posts", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(newObj)

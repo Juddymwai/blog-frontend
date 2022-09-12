@@ -10,7 +10,7 @@ function AddReview({onHandleAddReview, id, reviews}){
             comment:comment,
             post_id: id
         }
-        fetch (`http://localhost:9292/reviews`,{
+        fetch (`https://new-blog22.herokuapp.com/reviews`,{
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body:JSON.stringify(newReviews)

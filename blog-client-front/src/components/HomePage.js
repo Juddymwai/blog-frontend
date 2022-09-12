@@ -11,7 +11,7 @@ function HomePage(){
     
 
     useEffect(()=>{
-        fetch('http://localhost:9292/posts')
+        fetch('https://new-blog22.herokuapp.com/posts')
      
         .then((r)=> r.json())
         .then((data)=> setBlogPost(data))
@@ -61,7 +61,8 @@ function HomePage(){
                           <div className="reviews" style={{textAlign: "left"}}>
                               <p> <span style={{color: 'blue'}}>{review.name} </span>  ~  
                                {review.comment}  
-                                <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span> </p>
+                                <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span> 
+                                </p>
   
                           </div>
                           )
