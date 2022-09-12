@@ -61,7 +61,7 @@ function HomePage(){
                           <div className="reviews" style={{textAlign: "left"}}>
                               <p> <span style={{color: 'blue'}}>{review.name} </span>  ~  
                                {review.comment}  
-                                <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span> <DeletePost onDeletePost={handleDeletePost} id={review.id}/></p>
+                                <span style={{color: 'blue'}}>{new Date(review.created_at).toLocaleTimeString()}</span> </p>
   
                           </div>
                           )
